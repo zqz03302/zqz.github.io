@@ -23,28 +23,34 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"zqz03302.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZQZ learning">
-<meta property="og:url" content="https://zqz03302.github.io/index.html">
+<meta name="description" content="C++—–默认形参函数-语法：type 函数名(type 参数&#x3D;type elem);，在定义函数时就已经将默认参数定值 -例如">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++--默认形参函数">
+<meta property="og:url" content="https://zqz03302.github.io/2021/04/20/C++_%E9%BB%98%E8%AE%A4%E5%BD%A2%E5%8F%82%E5%87%BD%E6%95%B0/index.html">
 <meta property="og:site_name" content="ZQZ learning">
+<meta property="og:description" content="C++—–默认形参函数-语法：type 函数名(type 参数&#x3D;type elem);，在定义函数时就已经将默认参数定值 -例如">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-04-20T02:51:29.000Z">
+<meta property="article:modified_time" content="2021-04-20T07:21:58.354Z">
 <meta property="article:author" content="Qize Zhou">
+<meta property="article:tag" content="分享">
+<meta property="article:tag" content="语言学习">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://zqz03302.github.io/">
+<link rel="canonical" href="https://zqz03302.github.io/2021/04/20/C++_%E9%BB%98%E8%AE%A4%E5%BD%A2%E5%8F%82%E5%87%BD%E6%95%B0/">
 
 
 <script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
-<title>ZQZ learning</title>
+<title>C++--默认形参函数 | ZQZ learning</title>
   
 
 
@@ -141,7 +147,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -154,6 +160,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C-%E2%80%94%E2%80%93%E9%BB%98%E8%AE%A4%E5%BD%A2%E5%8F%82%E5%87%BD%E6%95%B0"><span class="nav-number">1.</span> <span class="nav-text">C++—–默认形参函数</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -228,98 +235,17 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://zqz03302.github.io/2021/04/20/C++_%E6%9E%9A%E4%B8%BE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Qize Zhou">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZQZ learning">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/04/20/C++_%E6%9E%9A%E4%B8%BE/" class="post-title-link" itemprop="url">C++不熟悉的点.1</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2021-04-20 10:51:29 / 修改时间：14:43:24" itemprop="dateCreated datePublished" datetime="2021-04-20T10:51:29+08:00">2021-04-20</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%AF%AD%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">语法</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="C-—–枚举类型（enum）"><a href="#C-—–枚举类型（enum）" class="headerlink" title="C++—–枚举类型（enum）"></a>C++—–枚举类型（enum）</h1><p>-语法：</p>
-<p><code>enume 枚举类型名 &#123;变量值列表&#125;</code></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/04/20/C++_%E6%9E%9A%E4%B8%BE/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://zqz03302.github.io/2021/04/20/C++_%E9%BB%98%E8%AE%A4%E5%BD%A2%E5%8F%82%E5%87%BD%E6%95%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -332,9 +258,9 @@
       <meta itemprop="name" content="ZQZ learning">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/04/20/C++_%E9%BB%98%E8%AE%A4%E5%BD%A2%E5%8F%82%E5%87%BD%E6%95%B0/" class="post-title-link" itemprop="url">C++--默认形参函数</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          C++--默认形参函数
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -367,17 +293,20 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="C-—–默认形参函数"><a href="#C-—–默认形参函数" class="headerlink" title="C++—–默认形参函数"></a>C++—–默认形参函数</h1><p>-语法：<br><code>type 函数名(type 参数=type elem);</code>，在定义函数时就已经将默认参数定值</p>
+        <h1 id="C-—–默认形参函数"><a href="#C-—–默认形参函数" class="headerlink" title="C++—–默认形参函数"></a>C++—–默认形参函数</h1><p>-语法：<br><code>type 函数名(type 参数=type elem);</code>，在定义函数时就已经将默认参数定值</p>
 <p>-例如</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/04/20/C++_%E9%BB%98%E8%AE%A4%E5%BD%A2%E5%8F%82%E5%87%BD%E6%95%B0/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int add(int x&#x3D;6 , int y&#x3D;5 )</span><br><span class="line"></span><br><span class="line">	&#123;</span><br><span class="line">		return x+y;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>如果函数被调用，但是未定义对应的实参，函数会把默认参数的值参与运算。<br>如下示例（add函数已经在上面被定义）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">	void main()</span><br><span class="line">&#123;</span><br><span class="line">		</span><br><span class="line">	int x &#x3D; 3, y &#x3D; 4, a;</span><br><span class="line">	a&#x3D;add();</span><br><span class="line">	cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">	a &#x3D; add(x);</span><br><span class="line">	cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">	a &#x3D; add(y);</span><br><span class="line">	cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">	a &#x3D; add(x,y);</span><br><span class="line">	cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">	system(&quot;pause&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>输出结果是<br>11  //6+5=11，调用时没定义参数。所以直接使用默认参数<br>8   //3+5，调用时定义了一个参数，所以赋值从左往右，把x定义为3<br>9   //4+5， 同上<br>7   //3+4<br>-技巧和错误<br> a 未定义的形参的必须在左边，定义的形参在右边，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int add(int x , int y&#x3D;5 )&#x2F;&#x2F;正确定义</span><br><span class="line"></span><br><span class="line">int add(int x&#x3D;6 , int y )&#x2F;&#x2F;错误定义</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p> b 函数会出现函数声明和定义分离的情况，该情况下声明里可以定义默认参数，后面函数的具体定义不准定义默认参数，如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">int add(int x&#x3D;4 , int y&#x3D;5 )&#x2F;&#x2F;函数声明</span><br><span class="line"></span><br><span class="line">void main()</span><br><span class="line">&#123;</span><br><span class="line">	....</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int add(int x  &#x2F;* &#x3D;6  *&#x2F; , int y   &#x2F;* &#x3D;5  *&#x2F;    )&#x2F;&#x2F;函数定义，不准在定义函数的默认值了，但是会用注释提醒已经有默认值了</span><br><span class="line"></span><br><span class="line">	&#123;</span><br><span class="line">		return x+y;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
     </div>
 
     
@@ -385,99 +314,47 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
+          <div class="reward-container">
+  <div>给我点个赞</div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/wechatpay.jpg" alt="Qize Zhou 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="/images/alipay.jpg" alt="Qize Zhou 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
 </div>
 
+          <div class="post-tags">
+              <a href="/tags/%E5%88%86%E4%BA%AB/" rel="tag"># 分享</a>
+              <a href="/tags/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" rel="tag"># 语言学习</a>
+          </div>
 
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://zqz03302.github.io/2021/04/19/hexo%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Qize Zhou">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ZQZ learning">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/04/19/hexo%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">hexo碰到的问题</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-04-19 20:02:24" itemprop="dateCreated datePublished" datetime="2021-04-19T20:02:24+08:00">2021-04-19</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-20 14:31:32" itemprop="dateModified" datetime="2021-04-20T14:31:32+08:00">2021-04-20</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="hexo—Cannot-Get"><a href="#hexo—Cannot-Get" class="headerlink" title="hexo—Cannot Get /"></a>hexo—Cannot Get /</h1><p>-更换了主题以后，出现了<code>Cannot Get /</code>。</p>
-<p><img src="/2021/04/19/hexo%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/CannotGet.png" alt="Cannot Get /" title="CannotGet"></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/04/19/hexo%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/04/19/hexo%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/" rel="prev" title="hexo碰到的问题">
+                  <i class="fa fa-chevron-left"></i> hexo碰到的问题
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/04/20/C++_%E6%9E%9A%E4%B8%BE/" rel="next" title="C++不熟悉的点.1">
+                  C++不熟悉的点.1 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
   </article>
 </div>
+
 
 
 
