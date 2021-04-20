@@ -263,7 +263,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-04-19 20:02:24 / 修改时间：21:33:01" itemprop="dateCreated datePublished" datetime="2021-04-19T20:02:24+08:00">2021-04-19</time>
+      <time title="创建时间：2021-04-19 20:02:24 / 修改时间：21:45:11" itemprop="dateCreated datePublished" datetime="2021-04-19T20:02:24+08:00">2021-04-19</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -286,11 +286,17 @@
     
     <div class="post-body" itemprop="articleBody">
           <h1 id="hexo—Cannot-Get"><a href="#hexo—Cannot-Get" class="headerlink" title="hexo—Cannot Get /"></a>hexo—Cannot Get /</h1><p>-更换了主题以后，出现了<code>Cannot Get /</code>。</p>
-<p><img src="/2021/04/19/hexo%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/images%5Chexo_CannotGet%5CCannotGet.png" alt="Cannot Get /"></p>
+
+
 <hr>
-<p>网上找了好多教程:<br>教程1：<br><img src="/2021/04/19/hexo%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/images%5Chexo_CannotGet%5C%E6%95%99%E7%A8%8B1.png" alt="教程1"><br>教程2：<br><img src="/2021/04/19/hexo%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/images%5Chexo_CannotGet%5C%E6%95%99%E7%A8%8B2.png" alt="教程2"></p>
+<p>网上找了好多教程:<br>教程1：</p>
+
+<p>教程2：</p>
+
 <hr>
-<p>但是最后都没有解决这个问题。<br>经过我自己的分析，我发现在根目录下的<code>public</code>这个文件里是主要的生成资源。也是最后静态网页最后生成的地方，一定是这里出了问题。<br>public目录：<br><img src="/2021/04/19/hexo%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/images%5Chexo_CannotGet%5Cpublic%E7%9B%AE%E5%BD%95.png" alt="public目录"><br>其中有时间的文件夹，应该是上一个主题生成的一些配置。还有就是<code>index.html</code>，这个应该就是最终生成页面的框架。为了保险起见我把这两个红框框起来的删除了。<br>然后重新<code>hexo g</code> <code>hexo s</code><br>问题解决。</p>
+<p>但是最后都没有解决这个问题。<br>经过我自己的分析，我发现在根目录下的<code>public</code>这个文件里是主要的生成资源。也是最后静态网页最后生成的地方，一定是这里出了问题。<br>public目录：</p>
+
+<p>其中有时间的文件夹，应该是上一个主题生成的一些配置。还有就是<code>index.html</code>，这个应该就是最终生成页面的框架。为了保险起见我把这两个红框框起来的删除了。<br>然后重新<code>hexo g</code> <code>hexo s</code><br>问题解决。</p>
 
       
     </div>
