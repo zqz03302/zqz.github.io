@@ -177,7 +177,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -348,6 +348,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/2021/04/28/C++_%E5%8F%8B%E5%85%83%E5%87%BD%E6%95%B0/" rel="next" title="1">
+                  1 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
@@ -359,6 +362,7 @@
 
 
 
+    <div class="comments gitalk-container"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -387,7 +391,8 @@
   <footer class="footer">
     <div class="footer-inner">
 
-
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
 <div class="copyright">
   &copy; 
   <span itemprop="copyrightYear">2021</span>
@@ -418,6 +423,27 @@
 
 
 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css">
+
+<script>
+NexT.utils.loadComments('.gitalk-container', () => {
+  NexT.utils.getScript('https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '8122da1ece14585298d9',
+      clientSecret: '97da5fba9628a7d5a0cadc028b1dbaab0892e9aa',
+      repo        : 'gitalk-comment',
+      owner       : '81679995',
+      admin       : [''],
+      id          : 'e343808ee2db2c8dccedb5116286ffc7',
+      proxy       : 'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token',
+        language: 'zh-CN',
+      distractionFreeMode: true
+    });
+    gitalk.render(document.querySelector('.gitalk-container'));
+  }, window.Gitalk);
+});
+</script>
 
 </body>
 </html>
