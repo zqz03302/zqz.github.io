@@ -23,14 +23,19 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"zqz03302.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
+<meta name="description" content="c++——友元函数友元函数能让一个类的对象访问该友元类的私有成员 -语法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1">
+<meta property="og:title" content="c++——友元函数">
 <meta property="og:url" content="https://zqz03302.github.io/2021/04/28/C++_%E5%8F%8B%E5%85%83%E5%87%BD%E6%95%B0/index.html">
 <meta property="og:site_name" content="ZQZ learning">
+<meta property="og:description" content="c++——友元函数友元函数能让一个类的对象访问该友元类的私有成员 -语法">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-28T08:35:44.000Z">
-<meta property="article:modified_time" content="2021-04-28T08:35:44.768Z">
+<meta property="article:modified_time" content="2021-05-07T11:56:07.731Z">
 <meta property="article:author" content="Qize Zhou">
+<meta property="article:tag" content="分享">
+<meta property="article:tag" content="语言学习">
+<meta property="article:tag" content="初级">
 <meta name="twitter:card" content="summary">
 
 
@@ -46,7 +51,7 @@
     lang   : 'zh-CN'
   };
 </script>
-<title>1 | ZQZ learning</title>
+<title>c++——友元函数 | ZQZ learning</title>
   
 
 
@@ -143,7 +148,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -156,6 +161,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#c-%E2%80%94%E2%80%94%E5%8F%8B%E5%85%83%E5%87%BD%E6%95%B0"><span class="nav-number">1.</span> <span class="nav-text">c++——友元函数</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -254,7 +260,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          1
+          c++——友元函数
         </h1>
 
         <div class="post-meta-container">
@@ -267,6 +273,22 @@
 
       <time title="创建时间：2021-04-28 16:35:44" itemprop="dateCreated datePublished" datetime="2021-04-28T16:35:44+08:00">2021-04-28</time>
     </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-05-07 19:56:07" itemprop="dateModified" datetime="2021-05-07T19:56:07+08:00">2021-05-07</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%AF%AD%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">语法</span></a>
+        </span>
+    </span>
 
   
 </div>
@@ -278,7 +300,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        
+        <h1 id="c-——友元函数"><a href="#c-——友元函数" class="headerlink" title="c++——友元函数"></a>c++——友元函数</h1><p>友元函数能让一个类的对象访问该友元类的私有成员</p>
+<p>-语法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class B</span><br><span class="line">&#123;</span><br><span class="line">	friend class A;   &#x2F;&#x2F;声明A为B的友元类</span><br><span class="line"></span><br><span class="line"> .......</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>这样A就可以使用B的私有成员。</p>
+<p>-注意点：</p>
+<p>1.友元函数不能传递，如：<br>B是A的友元（B能使用A的私有成员），C是B的友元（C能使用B的私有成员）。但是C不是A的友元，不能进行数据共享。<br>###但是不代表C不能用A的数据，只是C必须通过调用B的对象，然后B的对象再调用A。我们这里如果是友元指的是可以直接调用。###</p>
+<p>2.友元函数是单向的。<br>这个很简单。就是A如果是B的友元类，那么A访问B的数据，而反过来B不能直接访问A的。（在类的申明中，申明友元类的一方的数据可以被友元类访问）</p>
+<p>3.友元关系不被继承。<br>简单来说B是A的友元类，但是B的派生类并不是A的友元类。</p>
+
     </div>
 
     
@@ -304,6 +334,11 @@
   </div>
 </div>
 
+          <div class="post-tags">
+              <a href="/tags/%E5%88%86%E4%BA%AB/" rel="tag"># 分享</a>
+              <a href="/tags/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" rel="tag"># 语言学习</a>
+              <a href="/tags/%E5%88%9D%E7%BA%A7/" rel="tag"># 初级</a>
+          </div>
 
         
 
@@ -407,6 +442,6 @@ NexT.utils.loadComments('.gitalk-container', () => {
   }, window.Gitalk);
 });
 </script>
-
+proxy       : 'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token',
 </body>
 </html>
