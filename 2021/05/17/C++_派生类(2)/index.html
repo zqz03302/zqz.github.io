@@ -23,23 +23,23 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"zqz03302.github.io","root":"/","images":"/images","scheme":"Pisces","version":"8.3.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
-<meta name="description" content="C++—–默认形参函数-语法：type 函数名(type 参数&#x3D;type elem);，在定义函数时就已经将默认参数定值 -例如">
+<meta name="description" content="c++——派生类（2）类族在继承和派生过程过，会产生相当多的问题。 1.重名问题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++——默认形参函数">
-<meta property="og:url" content="https://zqz03302.github.io/2021/04/20/C++_%E9%BB%98%E8%AE%A4%E5%BD%A2%E5%8F%82%E5%87%BD%E6%95%B0/index.html">
+<meta property="og:title" content="c++——派生类（2）">
+<meta property="og:url" content="https://zqz03302.github.io/2021/05/17/C++_%E6%B4%BE%E7%94%9F%E7%B1%BB(2)/index.html">
 <meta property="og:site_name" content="ZQZ learning">
-<meta property="og:description" content="C++—–默认形参函数-语法：type 函数名(type 参数&#x3D;type elem);，在定义函数时就已经将默认参数定值 -例如">
+<meta property="og:description" content="c++——派生类（2）类族在继承和派生过程过，会产生相当多的问题。 1.重名问题">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-04-20T02:51:29.000Z">
-<meta property="article:modified_time" content="2021-04-22T11:02:12.522Z">
+<meta property="article:published_time" content="2021-05-17T12:29:24.000Z">
+<meta property="article:modified_time" content="2021-05-25T08:41:24.435Z">
 <meta property="article:author" content="Qize Zhou">
 <meta property="article:tag" content="分享">
 <meta property="article:tag" content="语言学习">
-<meta property="article:tag" content="初级">
+<meta property="article:tag" content="中级">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://zqz03302.github.io/2021/04/20/C++_%E9%BB%98%E8%AE%A4%E5%BD%A2%E5%8F%82%E5%87%BD%E6%95%B0/">
+<link rel="canonical" href="https://zqz03302.github.io/2021/05/17/C++_%E6%B4%BE%E7%94%9F%E7%B1%BB(2)/">
 
 
 <script class="page-configurations">
@@ -51,7 +51,7 @@
     lang   : 'zh-CN'
   };
 </script>
-<title>C++——默认形参函数 | ZQZ learning</title>
+<title>c++——派生类（2） | ZQZ learning</title>
   
 
 
@@ -161,7 +161,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#C-%E2%80%94%E2%80%93%E9%BB%98%E8%AE%A4%E5%BD%A2%E5%8F%82%E5%87%BD%E6%95%B0"><span class="nav-number">1.</span> <span class="nav-text">C++—–默认形参函数</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#c-%E2%80%94%E2%80%94%E6%B4%BE%E7%94%9F%E7%B1%BB%EF%BC%882%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">c++——派生类（2）</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -247,7 +247,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://zqz03302.github.io/2021/04/20/C++_%E9%BB%98%E8%AE%A4%E5%BD%A2%E5%8F%82%E5%87%BD%E6%95%B0/">
+    <link itemprop="mainEntityOfPage" href="https://zqz03302.github.io/2021/05/17/C++_%E6%B4%BE%E7%94%9F%E7%B1%BB(2)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -260,7 +260,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          C++——默认形参函数
+          c++——派生类（2）
         </h1>
 
         <div class="post-meta-container">
@@ -271,14 +271,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2021-04-20 10:51:29" itemprop="dateCreated datePublished" datetime="2021-04-20T10:51:29+08:00">2021-04-20</time>
+      <time title="创建时间：2021-05-17 20:29:24" itemprop="dateCreated datePublished" datetime="2021-05-17T20:29:24+08:00">2021-05-17</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-04-22 19:02:12" itemprop="dateModified" datetime="2021-04-22T19:02:12+08:00">2021-04-22</time>
+        <time title="修改时间：2021-05-25 16:41:24" itemprop="dateModified" datetime="2021-05-25T16:41:24+08:00">2021-05-25</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -300,19 +300,19 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="C-—–默认形参函数"><a href="#C-—–默认形参函数" class="headerlink" title="C++—–默认形参函数"></a>C++—–默认形参函数</h1><p>-语法：<br><code>type 函数名(type 参数=type elem);</code>，在定义函数时就已经将默认参数定值</p>
-<p>-例如</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int add(int x&#x3D;6 , int y&#x3D;5 )</span><br><span class="line"></span><br><span class="line">	&#123;</span><br><span class="line">		return x+y;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>如果函数被调用，但是未定义对应的实参，函数会把默认参数的值参与运算。<br>如下示例（add函数已经在上面被定义）：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">	void main()</span><br><span class="line">&#123;</span><br><span class="line">		</span><br><span class="line">	int x &#x3D; 3, y &#x3D; 4, a;</span><br><span class="line">	a&#x3D;add();</span><br><span class="line">	cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">	a &#x3D; add(x);</span><br><span class="line">	cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">	a &#x3D; add(y);</span><br><span class="line">	cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">	a &#x3D; add(x,y);</span><br><span class="line">	cout &lt;&lt; a &lt;&lt; endl;</span><br><span class="line">	system(&quot;pause&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>输出结果是<br>11  //6+5=11，调用时没定义参数。所以直接使用默认参数<br>8   //3+5，调用时定义了一个参数，所以赋值从左往右，把x定义为3<br>9   //4+5， 同上<br>7   //3+4<br>-技巧和错误<br> a 未定义的形参的必须在左边，定义的形参在右边，如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int add(int x , int y&#x3D;5 )&#x2F;&#x2F;正确定义</span><br><span class="line"></span><br><span class="line">int add(int x&#x3D;6 , int y )&#x2F;&#x2F;错误定义</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p> b 函数会出现函数声明和定义分离的情况，该情况下声明里可以定义默认参数，后面函数的具体定义不准定义默认参数，如：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">int add(int x&#x3D;4 , int y&#x3D;5 )&#x2F;&#x2F;函数声明</span><br><span class="line"></span><br><span class="line">void main()</span><br><span class="line">&#123;</span><br><span class="line">	....</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int add(int x  &#x2F;* &#x3D;6  *&#x2F; , int y   &#x2F;* &#x3D;5  *&#x2F;    )&#x2F;&#x2F;函数定义，不准在定义函数的默认值了，但是会用注释提醒已经有默认值了</span><br><span class="line"></span><br><span class="line">	&#123;</span><br><span class="line">		return x+y;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p> c 如果要声明没有参数的函数，最好在参数框加入<code>void</code><br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int add1(void)</span><br><span class="line">	&#123;</span><br><span class="line">		return 0;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></p>
+        <h1 id="c-——派生类（2）"><a href="#c-——派生类（2）" class="headerlink" title="c++——派生类（2）"></a>c++——派生类（2）</h1><p>类族在继承和派生过程过，会产生相当多的问题。</p>
+<p>1.重名问题</p>
+<p>在基类和派生类中数据成员和函数成员，会出现重名现象。<br>C++有一个隐藏规则，多个作用域中，如A作用域包含B作用域。A作用域申明一个标识符，B作用域不声明，那么B可用A申明的标识符。也就是内层可用外层标识符。<br>但是如果B也申明同名的标识符，B就会对外隐藏A的标识符。也就是内层隐藏外层标识符。</p>
+<p>所以说根据这个规则，派生类也是同样的规则。基类作为外层，会被内层的派生类隐藏同名数据和函数，即使是有不同参数的重名函数也会被隐藏。</p>
+<p>但是这只是单继承的情况。多继承的情况就更复杂了。</p>
+<p>多继承中，如果是继承的基类之间没有什么继承关系。而基类和派生类都有同名，那么最后就是派生类会屏蔽所有基类的同名。但是如果派生类没有同名，仅仅基类之间有同名，那么这两个同名是相同的作用域，只能用</p>
+<p>类名：：成员名 来区别。</p>
+<p>如果多继承的两个基类互相有继承关系，那么同名的情况比较复杂。但是根据隐藏规则，内层隐藏外层。那么派生类始终会隐藏基类如果想使用基类的成员函数只能用作用域分辨符。</p>
+<p>2.虚基类</p>
+<p>多继承会同时继承好几个基类，如果这几个基类又是继承于同一个基类，那么就会有好几个副本基类。<br>如：A派生了B和C，同时D又多继承了B和C。那么在D的对象中，会有两个A的副本（B和C中产生）。如果这个时候D对象有A和同名，那么D就会对A隐藏同名。如果没有重名，也不能直接使用A的成员，因为有两个A的副本，只能用作用域来区分。<br>这就是上文的多继承的情况。但是有时候不需要两个A的副本，只需要一个副本。这个时候就有虚继承。</p>
+<p>-语法</p>
+<p>class 派生类名：virtual 继承方式 基类名</p>
+<p>用了虚继承以后，同类型的基类在内存中就会有只有一个副本。那么就可以直接调用A中的成员了。</p>
 
     </div>
 
@@ -342,20 +342,20 @@
           <div class="post-tags">
               <a href="/tags/%E5%88%86%E4%BA%AB/" rel="tag"># 分享</a>
               <a href="/tags/%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0/" rel="tag"># 语言学习</a>
-              <a href="/tags/%E5%88%9D%E7%BA%A7/" rel="tag"># 初级</a>
+              <a href="/tags/%E4%B8%AD%E7%BA%A7/" rel="tag"># 中级</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/04/19/hexo%E9%85%8D%E7%BD%AE%E9%97%AE%E9%A2%98/" rel="prev" title="hexo碰到的问题">
-                  <i class="fa fa-chevron-left"></i> hexo碰到的问题
+                <a href="/2021/05/17/c++_%E5%87%BD%E6%95%B0%E6%8C%87%E9%92%88%E5%92%8C%E5%AF%B9%E8%B1%A1%E6%8C%87%E9%92%88/" rel="prev" title="c++——函数指针和对象指针">
+                  <i class="fa fa-chevron-left"></i> c++——函数指针和对象指针
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/04/20/C++_%E6%9E%9A%E4%B8%BE/" rel="next" title="C++——枚举">
-                  C++——枚举 <i class="fa fa-chevron-right"></i>
+                <a href="/2021/05/17/C++_%E6%B4%BE%E7%94%9F%E7%B1%BB(1)/" rel="next" title="c++——派生类（1）">
+                  c++——派生类（1） <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -441,7 +441,7 @@ NexT.utils.loadComments('.gitalk-container', () => {
       repo        : 'gitalk-comment',
       owner       : '81679995',
       admin       : [''],
-      id          : 'c2dc45d5e0a78a6fb58eb16c37039da0',
+      id          : '283777227c995386fcd734dcee99a3a8',
       proxy       : 'https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token',
         language: 'zh-CN',
       distractionFreeMode: true
