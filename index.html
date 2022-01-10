@@ -1022,7 +1022,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://zqz03302.github.io/2021/05/17/C++_%E6%B7%B1copy%E5%92%8C%E6%B5%85copy/">
+    <link itemprop="mainEntityOfPage" href="https://zqz03302.github.io/2021/05/17/C++_%E6%B4%BE%E7%94%9F%E7%B1%BB%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -1035,7 +1035,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/05/17/C++_%E6%B7%B1copy%E5%92%8C%E6%B5%85copy/" class="post-title-link" itemprop="url">c++——派生类（1）</a>
+          <a href="/2021/05/17/C++_%E6%B4%BE%E7%94%9F%E7%B1%BB%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80/" class="post-title-link" itemprop="url">c++——派生类内存布局</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1053,7 +1053,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-05-26 14:46:39" itemprop="dateModified" datetime="2021-05-26T14:46:39+08:00">2021-05-26</time>
+        <time title="修改时间：2021-05-26 17:09:35" itemprop="dateModified" datetime="2021-05-26T17:09:35+08:00">2021-05-26</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -1075,15 +1075,11 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="c-——派生类"><a href="#c-——派生类" class="headerlink" title="c++——派生类"></a>c++——派生类</h1><p>派生类类的产生就是继承最好体现。简单打个比方来说：<br>你手头有一个基本的类（基类），但是你对这个基类不是很满意，希望改造一下这个基类。那么最简单的就是使用继承，新建一个类（派生类），可以继承原有基类的所有数据成员和函数（构造和析构除外），并且自己还可以数据成员和函数。<br>-语法</p>
-<pre><code> class 派生类名：继承方式 基类名 1,继承方式 基类名2,.......
- &#123;
-     派生类成员申明；
- &#125;;
-</code></pre>
+          <h1 id="c-——派生类内存布局"><a href="#c-——派生类内存布局" class="headerlink" title="c++——派生类内存布局"></a>c++——派生类内存布局</h1><p>派生类的指针可以转化为基类的指针。那么内存中的情况是怎么样的？</p>
+<p>1.单继承的情况</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2021/05/17/C++_%E6%B7%B1copy%E5%92%8C%E6%B5%85copy/#more" rel="contents">
+              <a class="btn" href="/2021/05/17/C++_%E6%B4%BE%E7%94%9F%E7%B1%BB%E5%86%85%E5%AD%98%E5%B8%83%E5%B1%80/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
